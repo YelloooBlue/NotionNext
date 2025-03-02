@@ -96,7 +96,7 @@ const Header = props => {
   //       window.removeEventListener('scroll', handleScroll)
   //     }
   //   }
-  }, [])
+  // }, [])
 
   return (
     <>
