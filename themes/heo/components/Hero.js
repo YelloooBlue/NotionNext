@@ -16,7 +16,15 @@ import CONFIG from '../config'
  * @returns
  */
 const Hero = props => {
+
+  // YB新增：可以关闭英雄区
+  const HEO_HERO_ENABLE = siteConfig('HEO_HERO_ENABLE', true, CONFIG)
+  if (!HEO_HERO_ENABLE) {
+    return null
+  }
+  
   const HEO_HERO_REVERSE = siteConfig('HEO_HERO_REVERSE', false, CONFIG)
+
   return (
     <div
       id='hero-wrapper'
